@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-
+import Auth from '../components/Auth';
+import ErrorMessage from '../components/ErrorMessage';
 import { Provider } from 'react-redux';
 import decode from 'jwt-decode';
 
@@ -20,7 +21,8 @@ if (localStorage.jwtToken) {
 }
 const App = () => (
     <Provider store={store}>
-        <div>App Works</div>
+        <Auth authType = {'login'}/>
+        <ErrorMessage/>
     </Provider>
 )
 
