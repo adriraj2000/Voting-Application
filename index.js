@@ -14,8 +14,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api/auth', routes.auth);
-//app.use('/api/polls', routes.poll);
+app.use('/api/polls', routes.poll);
 
+//Used only for production level
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+
+    })
+}
 
 app.use(handle.error);
 

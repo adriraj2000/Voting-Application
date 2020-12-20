@@ -20,8 +20,6 @@ export const logout = () => {
   };
 };
 
-
-//Used for authenticating user using JsonWeb token
 export const authUser = (path, data) => {
   return async dispatch => {
     try {
@@ -30,10 +28,9 @@ export const authUser = (path, data) => {
       API.setToken(token);
       dispatch(setCurrentUser(user));
       dispatch(removeError());
-    } 
-    catch (err) {
+    } catch (err) {
       const { error } = err.response.data;
-      dispatch(addError(error.message));
+      dispatch(addError(error));
     }
   };
 };
