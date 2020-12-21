@@ -1,11 +1,14 @@
-require('dotenv').config();
+require('dotenv').config();//For handling the environment variables
 
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
+//HTTP-based header mechanism that allows a server to indicate any other origins 
+//(domain, scheme, or port) than its own from which a browser should permit loading of resources.
+
+const bodyParser = require('body-parser'); // It is required for parsing request body
 
 const routes = require('./routes');
-const handle = require('./handlers');
+const handle = require('./handlers');//Handlers are for giving functionality to each endpoints
 
 const app = express();
 const PORT = process.env.PORT || 4000;
