@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "node index.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "server": "nodemon index.js",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\"  \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\"  \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Adriraj Chaudhuri",
   "license": "ISC",
