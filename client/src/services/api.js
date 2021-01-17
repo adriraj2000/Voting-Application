@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const host = 'http://localhost:4000/api';
+const host = 'https://still-citadel-65131.herokuapp.com/api';
 
 export const setToken = token => {
     if(token){
