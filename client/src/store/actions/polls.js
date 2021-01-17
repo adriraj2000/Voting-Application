@@ -1,6 +1,7 @@
-import API from '../../services/api';
+
 import { SET_POLLS, SET_CURRENT_POLL } from '../actionTypes';
 import { addError, removeError } from './error';
+import API from '../../services/api';
 
 export const setPolls = polls => ({
     type: SET_POLLS,

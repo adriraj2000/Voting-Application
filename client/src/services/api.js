@@ -1,5 +1,5 @@
 import axios from 'axios';
-const host = 'https://still-citadel-65131.herokuapp.com/api';
+const {CLIENT_URL} = process.env
 
 export const setToken = token => {
     if(token){
@@ -11,7 +11,7 @@ export const setToken = token => {
 };
 
 export const call = async(method,path,data) => {
-    const response = await axios[method](`${host}/${path}`,data);
+    const response = await axios[method](`${CLIENT_URL}/${path}`,data);
     return response.data;
 }
 
