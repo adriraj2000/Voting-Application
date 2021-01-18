@@ -16,6 +16,6 @@
 
 # Installation
 To install this project on your local desktop, clone this repositor and include a .env file in the server directory and set the following environment variables
-MONGODB_URI = "Your database link"
-JWT_SECRET = "Any random string"
-You are good to go
+<ol>
+  <li><span style="color: green">MONGODB_URI = "Your database link"</span></li>
+  <li><span style="color: green">JWT_SECRET = "Some random string"</span></li>
