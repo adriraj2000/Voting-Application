@@ -13,3 +13,9 @@
 <li>MongoDB</li>
 <li>React</li>
 <li>JWT Authentication</li>
+
+# Installation
+To install this project on your local desktop, clone this repositor and include a .env file in the server directory and set the following environment variables
+MONGODB_URI = "Your database link"
+JWT_SECRET = "Any random string"
+You are good to go
