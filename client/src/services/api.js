@@ -1,5 +1,5 @@
 import axios from 'axios';
-const {CLIENT_URL} = process.env
+const host = 'http://localhost:4000/api'
 
 export const setToken = token => {
     if(token){
@@ -11,7 +11,7 @@ export const setToken = token => {
 };
 
 export const call = async(method,path,data) => {
-    const response = await axios[method](`${CLIENT_URL}/${path}`,data);
+    const response = await axios[method](`${host}/${path}`,data);
     return response.data;
 }
 
