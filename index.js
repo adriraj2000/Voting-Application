@@ -1,5 +1,5 @@
 require('dotenv').config();//For handling the environment variables
-
+const path = require('path')
 const express = require('express');
 const cors = require('cors');
 //HTTP-based header mechanism that allows a server to indicate any other origins 
@@ -23,8 +23,7 @@ app.use('/api/polls', routes.poll);
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-
+        res.sendFile(path.join(__dirname='client/build/index.html'));
     })
 }
 

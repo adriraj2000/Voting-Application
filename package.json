@@ -27,7 +27,8 @@
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^3.1.2",
     "mongoose": "^5.11.7",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
   },
   "engines": {
     "node": "12.18.4"
