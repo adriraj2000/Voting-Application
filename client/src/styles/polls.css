@@ -1,23 +1,22 @@
-  
-.polls li{
+.polls li {
     background-color: var(--light);
     color: var(--blue);
     padding: 0.5rem;
     text-align: center;
-}
-
-.polls li :nth-child(odd){
+  }
+  
+  .polls li:nth-child(odd) {
     background-color: white;
-}
-
-.polls li:hover {
+  }
+  
+  .polls li:hover {
     border: 2px solid var(--blue);
-}
-
-.poll-title {
+  }
+  
+  .poll-title {
     color: var(--blue);
     font-size: 2rem;
     margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
-}
+  }

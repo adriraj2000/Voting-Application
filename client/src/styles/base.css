@@ -1,10 +1,9 @@
-/*This is the base css file giving definition to all the root vars, here it refers to the colors which I have used*/
 :root {
-    --danger:#f55245;
-    --blue:#1a3359;
-    --light:#9ebed9;
-}
-
-body {
+    --danger: #ff8a80;
+    --blue: #4681da;
+    --light: #bbdefb;
+  }
+  
+  body {
     background-color: var(--light);
-}
+  }

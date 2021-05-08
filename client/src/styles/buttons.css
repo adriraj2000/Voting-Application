@@ -7,14 +7,13 @@
     margin: 1rem;
     padding: 0.2rem 1rem;
     transition: all 0.4s ease-out;
-}
-
-.button :hover{
+  }
+  
+  .button:hover {
     background-color: white;
-}
-
-.buttons_center {
-
+  }
+  
+  .buttons_center {
     display: flex;
     justify-content: center;
-}
+  }

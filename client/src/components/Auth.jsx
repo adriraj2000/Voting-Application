@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
-import { authUser, logout } from '../store/actions';
+import { authUser, logout } from "../store/actions";
 
 class Auth extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: '',
+      username: "",
+      password: "",
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -23,7 +23,7 @@ class Auth extends Component {
     const { username, password } = this.state;
     const { authType } = this.props;
     e.preventDefault();
-    this.props.authUser(authType || 'login', { username, password });
+    this.props.authUser(authType || "login", { username, password });
   }
 
   render() {
@@ -33,7 +33,7 @@ class Auth extends Component {
       <div>
         <form className="form" onSubmit={this.handleSubmit}>
           <label className="form-label" htmlFor="username">
-            username{' '}
+            username{" "}
           </label>
           <input
             type="text"
@@ -44,7 +44,7 @@ class Auth extends Component {
             className="form-input"
           />
           <label className="form-label" for="password">
-            password{' '}
+            password{" "}
           </label>
           <input
             type="password"

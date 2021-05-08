@@ -8,7 +8,6 @@ import { setToken, setCurrentUser, addError } from '../store/actions';
 
 import NavBar from './NavBar';
 import RouteViews from './RouteViews';
-import ErrorMessage from '../components/ErrorMessage';
 
 if (localStorage.jwtToken) {
   setToken(localStorage.jwtToken);
@@ -26,7 +25,6 @@ const App = () => (
       <Fragment>
         <NavBar />
         <RouteViews />
-        <ErrorMessage/>
       </Fragment>
     </Router>
   </Provider>

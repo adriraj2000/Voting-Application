@@ -5,14 +5,14 @@ import CreatePoll from '../components/CreatePoll';
 import ErrorMessage from '../components/ErrorMessage';
 
 const CreatePollPage = ({ isAuthenticated }) => {
-    if (!isAuthenticated) return <Redirect to="/login" />;
+  if (!isAuthenticated) return <Redirect to="/login" />;
 
-    return (
-        <div>
-            <ErrorMessage />
-            <CreatePoll />
-        </div>
-    );
+  return (
+    <div>
+      <ErrorMessage />
+      <CreatePoll />
+    </div>
+  );
 };
 
 export default CreatePollPage;
