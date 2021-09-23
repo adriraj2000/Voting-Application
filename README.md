@@ -18,7 +18,7 @@ https://tranquil-reaches-46773.herokuapp.com/
 <li>JWT Authentication</li>
 
 # Installation
-To install this project on your local desktop, clone this repositor and include a .env file in the server directory and set the following environment variables
+To install this project on your local desktop, clone this repository and include a .env file in the server directory and set the following environment variables
 
 ---
 **NOTE**
